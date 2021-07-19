@@ -31,7 +31,7 @@ If you’re on a legacy plan, you'll need to add transaction events to your [sub
 
 </Note>
 
-With [performance monitoring](/product/performance/), Sentry tracks your software performance, measuring metrics like throughput and latency, and displaying the impact of errors across multiple systems. Sentry captures distributed traces consisting of transactions and spans, which measure individual services and individual operations within those services. Learn more about our model in [Distributed Tracing](/product/performance/distributed-tracing/).
+With [performance monitoring](/product/performance/), Sentry tracks your software performance, measuring metrics like throughput and latency, and displaying the impact of errors across multiple systems. Sentry captures distributed traces consisting of transactions and spans, which measure individual services and individual operations within those services. Learn more about our model in [Distributed Tracing](/product/sentry-basics/tracing/distributed-tracing/).
 
 <PlatformSection supported={["dotnet", "go", "java", "javascript.nextjs", "node", "php", "python", "ruby"]}>
 <Note>
@@ -108,6 +108,16 @@ Otherwise, backend services with Performance Monitoring connect automatically.
 </PlatformSection>
 
 <PlatformSection supported={["javascript.react"]}>
+
+`@sentry/react` exports a `withProfiler` higher order component that can be used to capture React related spans for specific React components.
+
+```javascript {filename: App.js}
+import * as Sentry from "@sentry/react";
+
+export default Sentry.withProfiler(App);
+```
+
+Learn more about using and customizing the React Profiler in [Profiler](/platforms/javascript/guides/react/components/profiler/).
 
 ## React Router
 

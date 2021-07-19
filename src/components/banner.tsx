@@ -7,9 +7,9 @@ import React, { useState, useEffect } from "react";
 //
 const SHOW_BANNER = true;
 const BANNER_TEXT =
-  "Upcoming Technical Workshop: Build, Deploy, and Monitor Next.js applications.";
+  "Upcoming Technical Workshop: Tracing Across Your Services.";
 const BANNER_LINK_URL =
-  "https://us06web.zoom.us/webinar/register/5116227447463/WN_znhaqwALTXWf-3Rqtf8mBQ";
+  "https://sentry.io/resources/tracing-for-the-frontend-to-the-backend/?promo_name=docs";
 const BANNER_LINK_TEXT = "Register here.";
 const OPTIONAL_BANNER_IMAGE = null;
 

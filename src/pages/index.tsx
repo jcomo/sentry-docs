@@ -148,12 +148,12 @@ const IndexPage = () => {
           <div>
             <ul className="unstyled-list">
               <li>
-                <a href="/product/performance/getting-started/">
+                <a href="/product/performance/">
                   Performance Monitoring
                 </a>
               </li>
               <li>
-                <a href="/product/performance/distributed-tracing/">
+                <a href="/product/sentry-basics/tracing/distributed-tracing/">
                   Distributed Tracing
                 </a>
               </li>
